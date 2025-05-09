@@ -8,7 +8,7 @@
   $.getJSON("https://wtfismyip.com/json", function(localizacao) {
     var regiao = localizacao['YourFuckingLocation']?.replace(", Brazil", "");
     if (regiao) {
-      $("#custom-address").html("Localização detectada: <b>" + regiao + "</b>");
+      $("#custom-address").html("destino: <b>" + regiao + "</b>");
     } else {
       $("#custom-address").html("Não foi possível detectar a localização.");
     }
